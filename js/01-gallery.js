@@ -4,7 +4,7 @@ const refs = {
   galleryEl: document.querySelector('.gallery'),
 };
 
-//=================================================================
+//================================================================
 
 const GalleryMarkup = createGalleryMarkup(galleryItems);
 refs.galleryEl.insertAdjacentHTML('beforeend', GalleryMarkup);
