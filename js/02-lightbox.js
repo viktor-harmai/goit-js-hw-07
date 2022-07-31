@@ -16,13 +16,23 @@ function createGalleryMarkup(galleryItems) {
   return galleryItems
     .map(({ preview, original, description }) => {
       return `
+      
         <a class="gallery__item" href="${original}">
             <img 
-                class="gallery__image"
-                src="${preview}"
-                alt="${description}"
-                />
-        </a>`;
+              class="gallery__image"
+              src="${preview}"
+              alt="${description}"
+              width="800"
+              height="600"
+            />
+        </a>
+        `;
     })
     .join('');
 }
+
+const lightbox = new SimpleLightbox('.gallery .gallery__item', {
+  overlayOpacity: 1,
+  captionsData: 'alt',
+  captionDelay: 250,
+});
