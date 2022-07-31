@@ -6,8 +6,9 @@ const refs = {
 
 //================================================================
 
-const GalleryMarkup = createGalleryMarkup(galleryItems);
-refs.galleryEl.insertAdjacentHTML('beforeend', GalleryMarkup);
+const galleryMarkup = createGalleryMarkup(galleryItems);
+
+refs.galleryEl.insertAdjacentHTML('beforeend', galleryMarkup);
 
 function createGalleryMarkup(galleryItems) {
   return galleryItems
@@ -20,6 +21,8 @@ function createGalleryMarkup(galleryItems) {
           src="${preview}"
           data-source="${original}"
           alt="${description}"
+          width="800"
+          height="600"
           />
       </a>
       </div>
