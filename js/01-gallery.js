@@ -38,9 +38,7 @@ const modalTemplate = text =>
   `<div class="modal">
        <img
         class="modal__image"
-        src="${text}"
-        width="1200"
-        height="800"
+        src="${text}"       
         />
     </div>`;
 
