@@ -20,9 +20,7 @@ function createGalleryMarkup(galleryItems) {
           class="gallery__image"
           src="${preview}"
           data-source="${original}"
-          alt="${description}"
-          width="800"
-          height="600"
+          alt="${description}"          
           />
       </a>
       </div>
@@ -41,6 +39,8 @@ const modalTemplate = text =>
        <img
         class="modal__image"
         src="${text}"
+        width="800"
+        height="600"
         />
     </div>`;
 

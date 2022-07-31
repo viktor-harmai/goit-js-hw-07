@@ -21,9 +21,7 @@ function createGalleryMarkup(galleryItems) {
             <img 
               class="gallery__image"
               src="${preview}"
-              alt="${description}"
-              width="800"
-              height="600"
+              alt="${description}"              
             />
         </a>
         `;
